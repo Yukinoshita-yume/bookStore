@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="user-scalable=no"> -->
+    <title>omofun</title>
+    <link rel="stylesheet" href="../css/bookShop.css">
+    <style>
+        a{
+            color: #666;
+        }
+        @media screen and (min-width:750px) {
+            body{
+                background-color: pink;
+                background-image: url(../img/preview.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+        @media screen and (max-width:750px){
+            body{
+                background-color: #ccc;
+                background-image: url(../img/b1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="topbox">
+        <div id="topname">My BookShop</div>
+        <div id="topButtons">
+            <a href='#'>Home</a><a href="https://www.bilibili.com/">About Us</a><a href="https://www.iconfont.cn/?spm=a313x.search_index.i3.2.7c263a81Dv5JQQ">Contact Us</a>
+        </div>
+    </div>
+    <div id="bookbox"></div>
+<script src="../js/index.js"></script>
+<script type="text/javascript" src="../bookData/dmh.json?cb=train"></script>
+</body>
+</html>

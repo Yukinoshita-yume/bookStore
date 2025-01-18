@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For pay</title>
+    <link rel="stylesheet" href="../css/bookShop.css">
+    <style>
+        body{
+            background-color: aliceblue;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topbox">
+            <div class="t1">My Bookshop</div>
+            <div class="t2">
+                <a href="index.html">Home</a><a href="#">About Us</a><a href="#">Contact Us</a>
+            </div>
+            <div class="t3">&nbsp;Payment Options</div>
+        </div>
+    </header>
+    <div class="mainbox">
+        <div class="payMethodBox">
+            Debit/Credit Card
+            <div id="cards"></div>
+        </div>
+        <div class="payMainBox">
+            <div id="left">   
+                <div> &nbsp;Card Number</div>
+                <div> &nbsp;Expiration Date</div>
+                <div> &nbsp;Security Code</div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="right">
+                <div>
+                    <input type="text" id="cardNumber">
+                </div>
+                <div>
+                    <select name="Month" id="month">
+                        <option value=0 selected disabled>Month</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                        <option value=11>11</option>
+                        <option value=12>12</option>
+                    </select>
+                    <select name="Year" id="year">
+                        <option value=0 selected disabled>Year</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="securityCode">
+                </div>
+                <div>(3-4 digit code normally on the back of your card)</div>
+                <div>
+                    <div id="continueButton">Continue</div>
+                </div>
+            </div>
+        </div>    
+    </div> 
+    <script src="../js/pay.js"></script>
+</body>
+</html>
